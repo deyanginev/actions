@@ -63,14 +63,14 @@ typedef struct Action
 	unsigned long lst = 0;
 
 	/**
-	 * The time, in milliseconds, for which the first tick of the action will be sent after start. 
+	 * The time, in milliseconds, for which the first tick of the action will be sent after start.
 	 */
 	unsigned long to = 0;
 
 	/**
 	 * The last point in time since application start at which the action was started.
 	 */
-	unsigned long st = 0;	 // last start time
+	unsigned long st = 0; // last start time
 
 	/**
 	 * The current state of the action.
@@ -114,8 +114,8 @@ typedef struct Action
 
 typedef struct ActionsList
 {
-	size_t count = 0;
-	size_t availableActionsCount = 0;
+	unsigned int count = 0;
+	unsigned int availableActionsCount = 0;
 	Action *first = nullptr;
 	Action *last = nullptr;
 	Action *availableActions = nullptr;

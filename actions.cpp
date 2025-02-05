@@ -2,6 +2,7 @@
 // Author: Deyan Ginev, dginev@gmail.com
 //
 
+#include <stdlib.h>
 #include "actions.h"
 
 Action **executionArray;
