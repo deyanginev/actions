@@ -272,7 +272,7 @@ void doQueueActions(ActionsList *executionList, unsigned long time)
 				while (child != nullptr)
 				{
 					(*child).stop(child);
-					(*child).state = MS_NON_ACTIVE;
+					(*child).state = MS_CHILD_PENDING;
 					child = (*child).child;
 				}
 
